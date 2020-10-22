@@ -21,7 +21,7 @@ resource "azurerm_app_service" "service" {
   app_service_plan_id = azurerm_app_service_plan.plan.id
 
   site_config {
-    dotnet_framework_version = "v4.0"
+    java_version             = "12"
     scm_type                 = "GitHub"
   }
 
