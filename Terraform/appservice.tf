@@ -22,7 +22,7 @@ resource "azurerm_app_service" "service" {
 
   site_config {
     dotnet_framework_version = "v4.0"
-    scm_type                 = "LocalGit"
+    scm_type                 = "GitHub"
   }
 
   #app_settings = {
