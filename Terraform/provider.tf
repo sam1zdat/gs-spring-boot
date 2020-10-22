@@ -1,8 +1,6 @@
 terraform {
     # Terraform CLI version
     required_version= ">=0.13.4"
-    backend {
-        }
 }
 
 provider "azurerm"{
