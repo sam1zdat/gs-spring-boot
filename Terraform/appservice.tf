@@ -20,14 +20,14 @@ resource "azurerm_app_service" "service" {
   resource_group_name = azurerm_resource_group.rg.name
   app_service_plan_id = azurerm_app_service_plan.plan.id
   
-  source_control {
-    repo_url           ="https://github.com/sam1zdat/gs-spring-boot"
-    branch            ="master"
-    }
- # site_config {
-  #  java_version             = "12"
+  #source_control {
+   # repo_url           ="https://github.com/sam1zdat/gs-spring-boot"
+    #branch            ="master"
+    #}
+  site_config {
+    java_version             = "1.8"
    # scm_type                 = "GitHub"
-  #}
+  }
 
   #app_settings = {
   #  "SOME_KEY" = "some-value"
