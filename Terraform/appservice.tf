@@ -21,7 +21,7 @@ resource "azurerm_app_service" "service" {
   app_service_plan_id = azurerm_app_service_plan.plan.id
   
   source_control {
-    rep_url           ="https://github.com/sam1zdat/gs-spring-boot"
+    repo_url           ="https://github.com/sam1zdat/gs-spring-boot"
     branch            ="master"
     }
  # site_config {
